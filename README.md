@@ -20,7 +20,6 @@ The installer:
 
 - Installs the plugin from `github:0xf3dz/omp-untitled`.
 - Adds the extension status to the main OMP status bar.
-- Disables the separate hook-status line.
 
 Restart OMP after installation.
 
