@@ -10,17 +10,17 @@ This OMP extension shows Untitled Auto routing metrics for the current OMP sessi
 
 ## Install
 
-Install the extension from GitHub:
+Run the remote installer:
 
 ```bash
-omp plugin install github:0xf3dz/omp-untitled-metrics
+curl -fsSL https://raw.githubusercontent.com/0xf3dz/omp-untitled/main/install.sh | bash
 ```
 
-For local development, install the repository path:
+The installer:
 
-```bash
-omp plugin install ~/Documents/dev/omp-untitled-metrics
-```
+- Installs the plugin from `github:0xf3dz/omp-untitled`.
+- Adds the extension status to the main OMP status bar.
+- Disables the separate hook-status line.
 
 Restart OMP after installation.
 
@@ -31,30 +31,6 @@ Restart OMP after installation.
 - Run `/untitled details` to show or hide the detail panel.
 
 Exact token savings need a paired Sol comparison. The extension shows `—` when that comparison does not exist.
-
-## Integrate with the OMP status bar
-
-Add the `status` segment and disable the separate hook-status line:
-
-```yaml
-statusLine:
-  preset: custom
-  showHookStatus: false
-  leftSegments:
-    - pi
-    - model
-    - mode
-    - collab
-    - usage
-    - status
-    - path
-    - git
-    - pr
-  rightSegments:
-    - session_name
-```
-
-Restart OMP after the change.
 
 ## Data source
 
