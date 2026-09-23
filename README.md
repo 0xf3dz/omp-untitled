@@ -4,7 +4,7 @@ This OMP extension shows session-scoped routing metrics from [Untitled](https://
 
 ## Requirements
 
-- OMP
+- [Oh My Pi](https://github.com/can1357/oh-my-pi)
 - [Untitled](https://tryuntitled.ai/) on macOS
 - An OMP OpenAI Codex provider that sends requests through the local Untitled relay
 
