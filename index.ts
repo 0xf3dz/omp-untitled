@@ -338,13 +338,11 @@ export default function untitledMetrics(pi: ExtensionAPI): void {
 		}
 		const calculated = calculate(metrics);
 		const status = [
-			"UT session",
-			shortModel(metrics),
-			`${metrics.requests.toLocaleString("en-US")} req`,
-			"tokens —",
-			`workload ${percent(calculated.workloadSavingsPercent)}`,
+			`UT ${shortModel(metrics)}`,
+			`${metrics.requests.toLocaleString("en-US")}r`,
+			percent(calculated.workloadSavingsPercent),
 			multiplier(calculated.capacityMultiplier),
-		].join(" · ");
+		].join(" ");
 		ctx.ui.setStatus(STATUS_KEY, ctx.ui.theme.fg("accent", status));
 		ctx.ui.setWidget(DETAILS_KEY, detailsVisible ? detailLines(ctx, metrics) : undefined);
 	}

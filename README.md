@@ -26,11 +26,35 @@ Restart OMP after installation.
 
 ## Use
 
-- The footer shows the routed model, request count, workload savings, and capacity estimate for the current OMP session.
+- The OMP status bar shows the routed model, request count, workload savings, and capacity estimate for the current session.
 - Run `/untitled` to show or hide all extension output.
 - Run `/untitled details` to show or hide the detail panel.
 
 Exact token savings need a paired Sol comparison. The extension shows `—` when that comparison does not exist.
+
+## Integrate with the OMP status bar
+
+Add the `status` segment and disable the separate hook-status line:
+
+```yaml
+statusLine:
+  preset: custom
+  showHookStatus: false
+  leftSegments:
+    - pi
+    - model
+    - mode
+    - collab
+    - usage
+    - status
+    - path
+    - git
+    - pr
+  rightSegments:
+    - session_name
+```
+
+Restart OMP after the change.
 
 ## Data source
 
