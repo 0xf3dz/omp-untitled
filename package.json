@@ -1,0 +1,16 @@
+{
+  "name": "omp-untitled-metrics",
+  "version": "0.1.0",
+  "description": "Session-scoped Untitled Auto routing metrics for OMP.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0xf3dz/omp-untitled-metrics.git"
+  },
+  "omp": {
+    "name": "Untitled Session Metrics",
+    "extensions": [
+      "index.ts"
+    ]
+  }
+}
