@@ -1,7 +1,7 @@
 {
   "name": "omp-untitled",
   "version": "0.2.0",
-  "description": "Untitled Auto session metrics for OMP.",
+  "description": "Session-scoped Untitled Auto routing metrics for OMP.",
   "type": "module",
   "repository": {
     "type": "git",

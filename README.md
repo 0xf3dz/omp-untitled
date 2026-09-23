@@ -1,11 +1,11 @@
 # OMP Untitled Metrics
 
-This OMP extension shows Untitled Auto routing metrics for the current OMP session.
+This OMP extension shows session-scoped routing metrics from [Untitled Auto](https://tryuntitled.ai/) in the OMP status bar.
 
 ## Requirements
 
 - OMP
-- Untitled Auto on macOS
+- [Untitled Auto](https://tryuntitled.ai/) on macOS
 - An OMP OpenAI Codex provider that sends requests through the local Untitled relay
 
 ## Install
