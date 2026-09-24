@@ -28,9 +28,9 @@ Restart OMP after installation.
 - The OMP status bar shows the routed model, request count, workload savings, and capacity estimate for the current session.
 - Run `/untitled` to show or hide all extension output.
 - Run `/untitled details` to show or hide the detail panel.
+- Run `/models` to switch between specific models and the untitled router.
+- Note: `/untitled` only shows or hides metrics and does not change the model.
 
-`/models gpt-sol` selects GPT Sol as the active OMP model. `/untitled` only shows or hides metrics and does not change the model.
-To use Untitled again, run `/models` and select `Untitled Auto`.
 
 Exact token savings need a paired Sol comparison. The extension shows `—` when that comparison does not exist.
 
